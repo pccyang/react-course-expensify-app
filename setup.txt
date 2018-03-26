@@ -40,3 +40,10 @@ $ yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
 create src/tests/setupTests.js
 create jest.config.json
 $ yarn add enzyme-to-json@3.0.1
+
+
+# generate ssh key
+$ ssh-keygen -t rsa -b 4096 -C "paul@b4.ai"
+# add private key
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_rsa
