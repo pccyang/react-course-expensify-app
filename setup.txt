@@ -1,0 +1,42 @@
+env set up:
+Install nvm and node
+$ npm install -g yarn
+$ yarn init
+
+# use babel without webpack
+$ yarn add babel-cli@6.24.1 live-server
+
+# webpack
+$ yarn add webpack@3.1.0
+Create webpack.config.js
+$ yarn add react@16.0.0 react-dom@16.0.0
+$ yarn add babel-core@6.25.0 babel-loader@7.1.1
+config webpack.config.js to add babel support
+# style
+$ yarn add style-loader@0.18.2 css-loader@0.28.4
+config webpack.config.js to add style support
+# sass
+$ yarn add sass-loader@6.0.6 node-sass@4.5.3
+config webpack.config.js to add scss support
+# styling
+$ yarn add sass-loader@6.0.6 node-sass@4.5.3
+$ yarn add normalize.css@7.0.0
+
+
+$ yarn add react-router-dom@4.2.2
+$ yarn add redux@3.7.2
+$ yarn add uuid@3.1.0
+$ yarn add babel-plugin-transform-object-rest-spread@6.23.0 # To user ES6 spread
+$ yarn add react-redux@5.0.5
+$ yarn add moment@2.18.1 react-dates@12.7.0
+
+# babel build (without webpack)
+"build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+
+# test
+$ yarn add jest@20.0.4
+$ yarn add react-test-renderer@16.0.0
+$ yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
+create src/tests/setupTests.js
+create jest.config.json
+$ yarn add enzyme-to-json@3.0.1
