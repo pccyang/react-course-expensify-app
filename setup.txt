@@ -51,3 +51,11 @@ $ ssh-keygen -t rsa -b 4096 -C "paul@b4.ai"
 # add private key
 $ eval "$(ssh-agent -s)"
 $ ssh-add ~/.ssh/id_rsa
+
+
+# setup heroku integration
+install heroku cli
+$ heroku login
+$ heroku create <app_name>    # this will create a heroku git repo
+config package.json scripts
+$ git push heroku master
