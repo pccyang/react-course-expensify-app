@@ -29,6 +29,7 @@ $ yarn add uuid@3.1.0
 $ yarn add babel-plugin-transform-object-rest-spread@6.23.0 # To user ES6 spread
 $ yarn add react-redux@5.0.5
 $ yarn add moment@2.18.1 react-dates@12.7.0
+$ yarn add redux-thunk@2.2.0  # for async action
 
 # babel build (without webpack)
 "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
@@ -44,7 +45,9 @@ $ yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
 create src/tests/setupTests.js
 create jest.config.json
 $ yarn add enzyme-to-json@3.0.1
-
+$ yarn add redux-mock-store@1.2.3
+$ yarn add --dev cross-env@5.0.5 # set up test env for different platform
+$ yarn add --dev dotenv@4.0.0
 
 # generate ssh key
 $ ssh-keygen -t rsa -b 4096 -C "paul@b4.ai"
@@ -59,3 +62,10 @@ $ heroku login
 $ heroku create <app_name>    # this will create a heroku git repo
 config package.json scripts
 $ git push heroku master
+$ heroku open
+$ heroku config  # list heroku env variables
+$ heroku config:set KEY=value [Key=value]
+$ heroku config:unset KEY
+
+# firebase
+$ yarn add firebase@4.2.0
