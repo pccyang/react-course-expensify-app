@@ -30,6 +30,7 @@ $ yarn add babel-plugin-transform-object-rest-spread@6.23.0 # To user ES6 spread
 $ yarn add react-redux@5.0.5
 $ yarn add moment@2.18.1 react-dates@12.7.0
 $ yarn add redux-thunk@2.2.0  # for async action
+$ yarn add history@4.7.2
 
 # babel build (without webpack)
 "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
