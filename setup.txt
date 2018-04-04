@@ -39,6 +39,9 @@ $ yarn add history@4.7.2
 modify webpack.config.js and package.json
 $ yarn add extract-text-webpack-plugin@3.0.0
 
+# to support more/older browsers
+$ yarn add babel-polyfill@6.26.0
+
 # test
 $ yarn add jest@20.0.4
 $ yarn add react-test-renderer@16.0.0
@@ -65,7 +68,7 @@ config package.json scripts
 $ git push heroku master
 $ heroku open
 $ heroku config  # list heroku env variables
-$ heroku config:set KEY=value [Key=value]
+$ heroku config:set KEY=value [Key=value] # configure heroku environment variables
 $ heroku config:unset KEY
 
 # firebase
